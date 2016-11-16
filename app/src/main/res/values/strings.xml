@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">principal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sean_bienvenidos_a_esta_aplicacion_seleccione_su_opcion">SEAN BIENVENIDOS A ESTA APLICACION SELECCIONE SU OPCION</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telefonos_de_emergencia_que_necesita">Telefonos de Emergencia que necesita seleccione:</string>
+    <string name="informacion_de_clinica">Informacion de Clinica</string>
+    <string name="buscar_clinica">Buscar Clinica</string>
+    <string name="clinicas_managua">Clinicas Managua</string>
+    <string name="bienvenido_a_nuestra_aplicacion_consultapp">Bienvenido a ConsulApp</string>
+</resources>
