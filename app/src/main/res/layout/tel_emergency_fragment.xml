@@ -9,15 +9,16 @@
    <TextView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="@string/telefonos_de_emergencia_que_necesita"
+       android:text="telefonos de Emergencia"
        android:backgroundTint="@android:color/background_dark"
        android:textSize="24sp"
        android:textStyle="bold|italic"
        android:textColor="@android:color/white" />
 
     <ListView
+        android:id="@+id/lisTelefonos"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="371dp"
         android:theme="@android:style/Widget.Spinner.DropDown" />
 
 

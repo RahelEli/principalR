@@ -21,13 +21,11 @@
         android:text="Buscar"
         android:textAlignment="center"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="266dp"
-        android:id="@+id/imagen"
-        android:layout_marginTop="80dp"
-        android:src="#f7f781" />
-
+    <ListView
+        android:id="@+id/lisHosp"
+        android:layout_width="wrap_content"
+        android:layout_height="371dp"
+        android:theme="@android:style/Widget.Spinner.DropDown" />
 
 
 

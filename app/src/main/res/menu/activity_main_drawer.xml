@@ -4,25 +4,25 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/Hospitales"
-            android:icon="@drawable/hosp"
+            android:icon="@drawable/ic_action_josp"
             android:title="Hospitales" />
         <item
             android:id="@+id/Clinicas"
-            android:icon="@drawable/clinic"
-            android:title="Clinicas" />
+            android:icon="@drawable/ic_action_name"
+            android:title="Farmacias" />
         <item
             android:id="@+id/farma"
-            android:icon="@drawable/farma"
-            android:title="Farmacias" />
+            android:icon="@drawable/ic_action_clinic"
+            android:title="Clinicas" />
 
         <item
             android:id="@+id/TelEmergency"
-            android:icon="@drawable/cell"
+            android:icon="@drawable/ic_action_cell"
             android:title="Telefonos Emergencia" />
 
         <item
             android:id="@+id/Mapas"
-            android:icon="@drawable/local"
+            android:icon="@drawable/ic_action_local"
             android:title="Maps" />
 
     </group>

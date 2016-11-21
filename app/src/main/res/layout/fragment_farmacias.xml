@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/buscar"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="400dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar Farmacia"
@@ -26,19 +26,16 @@
 
     <Button
         android:id="@+id/infoFarma"
-        android:layout_marginTop="445dp"
+        android:layout_marginTop="450dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Informacion de Farmacia"
         android:textSize="20dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="266dp"
-        android:id="@+id/imagen"
-        android:layout_marginTop="80dp"
-        android:src="#f7f781" />
-
-
+    <ListView
+        android:id="@+id/lisFarma"
+        android:layout_width="wrap_content"
+        android:layout_height="371dp"
+        android:theme="@android:style/Widget.Spinner.DropDown" />
 
 </FrameLayout>
