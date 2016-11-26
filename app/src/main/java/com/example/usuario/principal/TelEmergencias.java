@@ -18,8 +18,6 @@ import android.widget.Toast;
 
 public class TelEmergencias extends Fragment {
 
-
-
     public static TelEmergencias getInstance (){
         TelEmergencias fragment4 = new TelEmergencias();
         return  fragment4;

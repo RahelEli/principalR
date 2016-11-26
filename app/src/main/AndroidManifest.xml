@@ -26,12 +26,6 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.google.android.geo.consulApp"
-            android:value="AIzaSyDJV2IGPQc8fR6D_KUSzkg9txuTF4lVLBo" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -46,7 +40,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Maps"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
     </application>
 
