@@ -1,5 +1,6 @@
-package com.example.usuario.principal;
+package com.example.usuario.ConsulAPP;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.usuario.principal.R;
 
 /**
  * Created by USUARIO on 15/11/2016.
@@ -27,6 +31,15 @@ public class Clinica extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_clinicas,container,false);
 
+        Button btn = (Button) view.findViewById(R.id.buscarCli);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MapsActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
         String[] cosasPorHacer = new String[] { "Odontologica Mongalo",
                 "Olimpo A.central","Inmaculada Concepcion","Oftamologico Altamira", "Clinica Valle",
                 "Clinica Imagen", "ProFamilia", "ProActive Dental", "New Life smile", "Optilaser"};
@@ -37,14 +50,14 @@ public class Clinica extends Fragment{
                 android.R.layout.simple_list_item_1, cosasPorHacer);
 
         // C. Seleccionamos la lista de nuestro layout
-        ListView lisHosp = (ListView) view.findViewById(R.id.lisHosp);
+        ListView lisClinic = (ListView) view.findViewById(R.id.lisClinic);
 
         // D. Asignamos el adaptador a nuestra lista
-        lisHosp.setAdapter(arrayAdapter);
+       lisClinic.setAdapter(arrayAdapter);
 
-        lisHosp.setAdapter(arrayAdapter);
+       lisClinic.setAdapter(arrayAdapter);
 
-        lisHosp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lisClinic.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getActivity(), "Col Los Robles Hotel Colón 2 1/2c al S #23 . Tel:22707970" + 0,

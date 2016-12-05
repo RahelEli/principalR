@@ -12,7 +12,8 @@
     <string name="telefonos_de_hospitales_que_necesita">Direcciones y Telefonos de Hospitales seleccione:</string>
     <string name="informacion_de_clinica">Informacion de Clinica</string>
     <string name="buscar_clinica">Buscar Clinica</string>
-    <string name="clinicas_managua">Clinicas Managua</string>
+    <string name="clinicas_managua">com.example.usuario.principal.Clinicas Managua</string>
     <string name="bienvenido_a_nuestra_aplicacion_consultapp">Bienvenido a ConsulApp</string>
     <string name="title_activity_maps">Map</string>
+    <string name="buscar">Buscar</string>
 </resources>

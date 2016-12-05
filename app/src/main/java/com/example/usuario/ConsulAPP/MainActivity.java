@@ -1,10 +1,9 @@
-package com.example.usuario.principal;
+package com.example.usuario.ConsulAPP;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
@@ -17,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.usuario.principal.R;
 import com.google.android.gms.maps.MapFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -90,12 +90,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.Hospitales) {
             Fragment fragment3 = ListHospitales.getInstace();
             mostrarFragment(fragment3);
-        } else if (id == R.id.Clinicas) {
+        } else if (id == R.id.farmacias) {
 
             Fragment fragment = Farmacia.getInstace();
             mostrarFragment(fragment);
 
-        } else if (id == R.id.farma) {
+        } else if (id == R.id.Clinicas) {
 
            Fragment fragment1 = Clinica.getInstace();
             mostrarFragment(fragment1);

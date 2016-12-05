@@ -7,11 +7,11 @@
             android:icon="@drawable/ic_action_josp"
             android:title="Hospitales" />
         <item
-            android:id="@+id/Clinicas"
+            android:id="@+id/farmacias"
             android:icon="@drawable/ic_action_name"
             android:title="Farmacias" />
         <item
-            android:id="@+id/farma"
+            android:id="@+id/Clinicas"
             android:icon="@drawable/ic_action_clinic"
             android:title="Clinicas" />
 

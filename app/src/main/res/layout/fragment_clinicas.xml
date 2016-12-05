@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.usuario.ConsulAPP.Clinica"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Clinicas de Managua"
-        android:backgroundTint="@android:color/background_dark"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:textColor="@android:color/white" />
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#0fcd65"
+        android:textSize="30dp" />
 
 
     <Button
         android:id="@+id/buscarCli"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar Clinica"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="bottom"/>
 
-    <Button
-        android:id="@+id/infoCli"
-        android:layout_marginTop="445dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Informacion de Clinica"
-        android:textSize="20dp" />
 
     <ListView
         android:id="@+id/lisClinic"
         android:layout_width="wrap_content"
         android:layout_height="371dp"
-        android:theme="@android:style/Widget.Spinner.DropDown" />
+        android:theme="@android:style/Widget.Spinner.DropDown"
+        android:background="@android:color/holo_green_light" />
 
 
-</LinearLayout>
+</FrameLayout>

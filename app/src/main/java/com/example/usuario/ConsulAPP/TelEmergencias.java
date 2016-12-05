@@ -1,10 +1,11 @@
-package com.example.usuario.principal;
+package com.example.usuario.ConsulAPP;
 
 
 /**
  * Created by USUARIO on 14/11/2016.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,10 +14,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.usuario.principal.R;
+
+
 public class TelEmergencias extends Fragment {
+
+/*
+    private TextView get_place;
+
+    @Override
+    public void onCreate( Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.tel_emergency_fragment);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+    }
+*/
+
 
     public static TelEmergencias getInstance (){
         TelEmergencias fragment4 = new TelEmergencias();
@@ -28,7 +46,14 @@ public class TelEmergencias extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tel_emergency_fragment,container,false);
 
-
+        Button btn = (Button) view.findViewById(R.id.buscar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MapsActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
 
         // A. Creamos el arreglo de Strings para llenar la lista
         String[] cosasPorHacer = new String[] { "Policia",
@@ -78,4 +103,7 @@ public class TelEmergencias extends Fragment {
         });
         return view;
     }
+
+
+
 }

@@ -1,5 +1,6 @@
-package com.example.usuario.principal;
+package com.example.usuario.ConsulAPP;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.usuario.principal.R;
 
 /**
  * Created by USUARIO on 15/11/2016.
@@ -28,6 +32,17 @@ public class ListHospitales extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.list_hospitales_fragment,container,false);
         // A. Creamos el arreglo de Strings para llenar la lista
+        Button btn = (Button) view.findViewById(R.id.buscar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MapsActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
+
+
         String[] cosasPorHacer = new String[] { "Hospital Bautista",
                 "Bertha Calderon","Vivian Pellas","Alemán Nicaraguense", "Antonio Lenin Fonseca",
                 "Carlos R. Huembes", "Manolo Morales", "Militar", "Monte España", "Salud Integral"};

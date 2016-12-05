@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.usuario.ConsulAPP.TelEmergencias"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark">
 
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="telefonos de Emergencia"
-       android:backgroundTint="@android:color/background_dark"
-       android:textSize="24sp"
-       android:textStyle="bold|italic"
-       android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/buscar"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar ayuda"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="bottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="telefonos de Emergencia"
+        android:backgroundTint="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white" />
 
     <ListView
         android:id="@+id/lisTelefonos"
         android:layout_width="wrap_content"
-        android:layout_height="371dp"
-        android:theme="@android:style/Widget.Spinner.DropDown" />
+        android:layout_height="501dp"
+        android:theme="@android:style/Widget.Spinner.DropDown"
+        android:background="@android:color/holo_green_light"/>
 
-
-
-</LinearLayout>
+</FrameLayout>
